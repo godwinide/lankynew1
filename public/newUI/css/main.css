@@ -20,6 +20,7 @@ body {
 }
 
 main {
+    padding-top: 3em;
     height: 95vh;
     width: 100%;
     background-image: url(/img/bg.jpg);
