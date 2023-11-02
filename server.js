@@ -44,6 +44,11 @@ app.use(function (req, res, next) {
 const PORT = process.env.PORT || 2022;
 
 // URLS
+
+app.use("*", (req, res) => {
+  return res.render("down", { layout: false });
+});
+
 app.use("/", require("./routes/index"));
 app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/user"));
